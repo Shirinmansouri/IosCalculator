@@ -1,24 +1,530 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4U2-E1-n8g">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="hgE-f9-I9L">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="4U2-E1-n8g" customClass="ViewController" customModule="CalculatorFirstDesign" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eWl-dZ-kys">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="evc-QV-vk0">
+                                <rect key="frame" x="32" y="377" width="350" height="470"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZdI-ia-WMW">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGa-Su-M52" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.71353214980000002" green="0.68618804219999996" blue="0.69019657369999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="FKI-E6-UqR"/>
+                                                    <constraint firstAttribute="height" constant="80" id="bAx-k5-tTi"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="AC">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="labelColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKX-KV-6XB" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.7174215317" green="0.68619018789999997" blue="0.69019651410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="xNb-gh-va3"/>
+                                                    <constraint firstAttribute="height" constant="80" id="zmk-qP-33M"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="+/-">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="labelColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Du0-ub-xj1" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.7174215317" green="0.68619018789999997" blue="0.69019651410000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="4I7-Nq-58R"/>
+                                                    <constraint firstAttribute="width" constant="80" id="adE-LE-gng"/>
+                                                </constraints>
+                                                <state key="normal" title="%">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="%">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="labelColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YMf-AU-Ah4" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="ccy-il-yoz"/>
+                                                    <constraint firstAttribute="height" constant="80" id="iiM-lz-0XF"/>
+                                                </constraints>
+                                                <state key="normal" title="÷">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="÷">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="Eo9-AH-XTK"/>
+                                            <constraint firstAttribute="height" constant="80" id="EwV-AP-wYb"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="StT-aV-eLj"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="b5K-Ii-jqE"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="htt-Z0-GdT"/>
+                                            <constraint firstAttribute="width" constant="350" id="qnQ-Kz-7pI"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nB4-X3-b17">
+                                        <rect key="frame" x="0.0" y="97.5" width="350" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XyN-kv-Vb7" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="8za-rS-oqX"/>
+                                                    <constraint firstAttribute="width" constant="80" id="a3R-La-GKU"/>
+                                                </constraints>
+                                                <state key="normal" title="7">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="7">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Zx-C2-f0K" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="F3Z-8N-p9Y"/>
+                                                    <constraint firstAttribute="height" constant="80" id="YqW-HY-w7A"/>
+                                                </constraints>
+                                                <state key="normal" title="8">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="8">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JzW-a7-KsP" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="aUo-V5-0aJ"/>
+                                                    <constraint firstAttribute="width" constant="80" id="kkR-GI-KMR"/>
+                                                </constraints>
+                                                <state key="normal" title="9">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="9">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OKd-9g-NyW" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="0Pf-cS-lAX"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Qb4-0L-pPG"/>
+                                                </constraints>
+                                                <state key="normal" title="×">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="×">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="350" id="DFO-rb-CuQ"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="YBr-lj-0PZ"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="d5Q-4W-RAH"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="ft7-KD-qMW"/>
+                                            <constraint firstAttribute="height" constant="80" id="jm1-Pt-bVu"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="y59-NZ-NF0"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iQQ-hO-rwd">
+                                        <rect key="frame" x="0.0" y="195" width="350" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nSE-0r-XK0" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="J55-8D-35a"/>
+                                                    <constraint firstAttribute="height" constant="80" id="qA6-3N-ofU"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="4">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21b-C3-AuF" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="37L-gK-jdN"/>
+                                                    <constraint firstAttribute="width" constant="80" id="L3p-uc-eg1"/>
+                                                </constraints>
+                                                <state key="normal" title="5">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="5">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7k-kM-aZv" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="bEr-hg-lgY"/>
+                                                    <constraint firstAttribute="width" constant="80" id="zFh-FL-BNr"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="6">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cb-l6-1ul" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="7m8-gc-hfJ"/>
+                                                    <constraint firstAttribute="height" constant="80" id="KCI-ZR-olC"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="-">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="40" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="6c2-bg-tar"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="ASd-IJ-J4m"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="GuV-6z-jBM"/>
+                                            <constraint firstAttribute="height" constant="80" id="VxJ-ws-gC6"/>
+                                            <constraint firstAttribute="width" constant="350" id="tZ6-Ej-h7c"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="v83-EY-TCQ"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="49Y-1a-42z">
+                                        <rect key="frame" x="0.0" y="292.5" width="350" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvA-aa-FjP" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Jek-aw-WOQ"/>
+                                                    <constraint firstAttribute="height" constant="80" id="Wyd-id-E0g"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="1">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7W-vu-DGo" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="5rG-vp-Rwl"/>
+                                                    <constraint firstAttribute="width" constant="80" id="yIa-YW-Sbh"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="2">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsu-RH-skj" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="JI0-3j-ffm"/>
+                                                    <constraint firstAttribute="height" constant="80" id="ddo-Mj-Bps"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="3">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4X-Sb-Pbi" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="V1j-2Z-AGM"/>
+                                                    <constraint firstAttribute="height" constant="80" id="u5G-7O-Km5"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="+">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="4Am-Tw-fCB"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="5L5-su-zb0"/>
+                                            <constraint firstAttribute="width" constant="350" id="CTN-yl-1pd"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="Ckf-MO-UxD"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="IJo-AU-rWl"/>
+                                            <constraint firstAttribute="height" constant="80" id="cCa-Y8-SvO"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JTU-dw-8Rs">
+                                        <rect key="frame" x="0.0" y="390" width="350" height="80"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-Ce-8Og" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="160" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="160" id="P1y-MO-kCP"/>
+                                                    <constraint firstAttribute="height" constant="80" id="anD-lS-CKi"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="0">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iII-Es-5TA" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="175" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="NmS-po-Emn"/>
+                                                    <constraint firstAttribute="width" constant="80" id="oom-gz-O1u"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content=".">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYh-aW-kpo" customClass="RoundButton" customModule="CalculatorFirstDesign" customModuleProvider="target">
+                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Fiy-H9-HMx"/>
+                                                    <constraint firstAttribute="height" constant="80" id="GbT-42-X0H"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="=">
+                                                            <attributes>
+                                                                <color key="NSColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                                <font key="NSFont" size="30" name="AvenirNext-DemiBold"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="roundButton" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="6d2-I4-lBU"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="360" id="SUh-kb-qQf"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="Wna-pl-sTN"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="370" id="lJf-GJ-eMZ"/>
+                                            <constraint firstAttribute="height" constant="80" id="o4T-Vr-vE4"/>
+                                            <constraint firstAttribute="width" constant="350" id="uOE-Kz-Gse"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="470" id="xFi-wa-IKX"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="1234567890" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOe-jG-Hw1">
+                                <rect key="frame" x="32" y="119" width="350" height="233"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="60"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y6D-w1-CD4"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
+                        <constraints>
+                            <constraint firstItem="mOe-jG-Hw1" firstAttribute="centerX" secondItem="eWl-dZ-kys" secondAttribute="centerX" id="0mY-OP-GBe"/>
+                            <constraint firstItem="evc-QV-vk0" firstAttribute="centerX" secondItem="eWl-dZ-kys" secondAttribute="centerX" id="1jl-JG-Kf9"/>
+                            <constraint firstItem="mOe-jG-Hw1" firstAttribute="top" secondItem="y6D-w1-CD4" secondAttribute="top" constant="65" id="9N9-6B-b2X"/>
+                            <constraint firstItem="mOe-jG-Hw1" firstAttribute="centerX" secondItem="eWl-dZ-kys" secondAttribute="centerX" id="CFl-hR-xVH"/>
+                            <constraint firstItem="mOe-jG-Hw1" firstAttribute="top" secondItem="y6D-w1-CD4" secondAttribute="top" constant="75" id="Jln-KL-rkk"/>
+                            <constraint firstItem="evc-QV-vk0" firstAttribute="top" secondItem="mOe-jG-Hw1" secondAttribute="bottom" constant="25" id="VLG-Z2-x0H"/>
+                            <constraint firstItem="evc-QV-vk0" firstAttribute="top" secondItem="mOe-jG-Hw1" secondAttribute="bottom" constant="25" id="kAc-w5-HYu"/>
+                            <constraint firstItem="y6D-w1-CD4" firstAttribute="bottom" secondItem="evc-QV-vk0" secondAttribute="bottom" constant="15" id="rqF-xn-2f6"/>
+                            <constraint firstItem="mOe-jG-Hw1" firstAttribute="centerX" secondItem="eWl-dZ-kys" secondAttribute="centerX" id="y16-ZR-u3t"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="vwCalc" destination="eWl-dZ-kys" id="I7t-ZJ-bOw"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lk8-45-wZ2" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
