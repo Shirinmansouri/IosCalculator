@@ -1,9 +1,16 @@
-//
-//  ViewController.swift
-//  CalculatorFirstAssignment
-//
-//  Created by Shirin Mansouri on 2021-09-17.
-//
+ /*
+  File : ViewController- Calculator Operation
+  Author: Shirin Mansouri
+  StudentId: 301131068
+  
+  Author: Ali Roudak
+  StudentId: 301131068
+  
+  ModifiedDate: 25/September/2021
+  Description: Calculator
+  
+  
+  */
 
 import UIKit
 
