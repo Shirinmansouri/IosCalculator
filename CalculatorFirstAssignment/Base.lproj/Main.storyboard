@@ -26,7 +26,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGa-Su-M52" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
-                                                <color key="backgroundColor" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.94167947770000004" green="0.5979203582" blue="0.2194646895" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="FKI-E6-UqR"/>
                                                     <constraint firstAttribute="height" constant="80" id="bAx-k5-tTi"/>
@@ -542,6 +542,68 @@
             <point key="canvasLocation" x="18.840579710144929" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="21b-C3-AuF">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="4Zx-C2-f0K">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="6cb-l6-1ul">
+            <size key="intrinsicContentSize" width="30" height="66.5"/>
+        </designable>
+        <designable name="CGa-Su-M52">
+            <size key="intrinsicContentSize" width="42" height="53"/>
+        </designable>
+        <designable name="Du0-ub-xj1">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="DvA-aa-FjP">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="F4X-Sb-Pbi">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="GKX-KV-6XB">
+            <size key="intrinsicContentSize" width="42" height="53"/>
+        </designable>
+        <designable name="JzW-a7-KsP">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="OKd-9g-NyW">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="P7k-kM-aZv">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="Qvt-6F-SS9">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="XyN-kv-Vb7">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="YMf-AU-Ah4">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="h7W-vu-DGo">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="hKC-Ce-8Og">
+            <size key="intrinsicContentSize" width="26.5" height="22"/>
+        </designable>
+        <designable name="iDv-Y8-7ff">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="nSE-0r-XK0">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="nsu-RH-skj">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+        <designable name="sYh-aW-kpo">
+            <size key="intrinsicContentSize" width="30" height="53"/>
+        </designable>
+    </designables>
     <resources>
         <image name="delete.left" catalog="system" width="128" height="104"/>
         <systemColor name="labelColor">
