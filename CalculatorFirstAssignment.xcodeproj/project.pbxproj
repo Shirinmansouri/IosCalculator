@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1409E9D527001C3500298651 /* SecondDesign.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1409E9D427001C3500298651 /* SecondDesign.storyboard */; };
 		BF89C8B226FE988D00E066D0 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF89C8B126FE988D00E066D0 /* RoundButton.swift */; };
 		BF997A4426F553C1003BCC2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF997A4326F553C1003BCC2E /* AppDelegate.swift */; };
 		BF997A4626F553C1003BCC2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF997A4526F553C1003BCC2E /* SceneDelegate.swift */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1409E9D427001C3500298651 /* SecondDesign.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SecondDesign.storyboard; sourceTree = "<group>"; };
 		BF89C8B126FE988D00E066D0 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		BF997A4026F553C1003BCC2E /* CalculatorFirstAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalculatorFirstAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF997A4326F553C1003BCC2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				BF997A4E26F553C2003BCC2E /* LaunchScreen.storyboard */,
 				BF997A5126F553C2003BCC2E /* Info.plist */,
 				BF89C8B126FE988D00E066D0 /* RoundButton.swift */,
+				1409E9D427001C3500298651 /* SecondDesign.storyboard */,
 			);
 			path = CalculatorFirstAssignment;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1409E9D527001C3500298651 /* SecondDesign.storyboard in Resources */,
 				BF997A5026F553C2003BCC2E /* LaunchScreen.storyboard in Resources */,
 				BF997A4D26F553C2003BCC2E /* Assets.xcassets in Resources */,
 				BF997A4B26F553C1003BCC2E /* Main.storyboard in Resources */,
