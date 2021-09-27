@@ -546,8 +546,8 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="123456789" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdV-rd-ajj">
-                                <rect key="frame" x="40" y="343" width="296" height="76"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="123456789" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NdV-rd-ajj">
+                                <rect key="frame" x="40" y="308.5" width="286" height="62.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="52"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -556,6 +556,7 @@
                         <viewLayoutGuide key="safeArea" id="D1E-Wq-0zF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="NdV-rd-ajj" firstAttribute="leading" secondItem="D1E-Wq-0zF" secondAttribute="leading" constant="40" id="4aX-PZ-eGr"/>
                             <constraint firstItem="L7T-mh-zOg" firstAttribute="leading" secondItem="D1E-Wq-0zF" secondAttribute="leading" constant="40" id="Ahq-ib-b4S"/>
                             <constraint firstItem="D1E-Wq-0zF" firstAttribute="trailing" secondItem="Qiv-a8-eWD" secondAttribute="trailing" constant="40" id="K1M-NC-iOU"/>
                             <constraint firstItem="D1E-Wq-0zF" firstAttribute="trailing" secondItem="Qiv-a8-eWD" secondAttribute="trailing" constant="30" id="Leb-qF-6Ps"/>
@@ -564,6 +565,7 @@
                             <constraint firstItem="D1E-Wq-0zF" firstAttribute="trailing" secondItem="L7T-mh-zOg" secondAttribute="trailing" constant="40" id="TSD-IP-8dG"/>
                             <constraint firstItem="Qiv-a8-eWD" firstAttribute="top" secondItem="D1E-Wq-0zF" secondAttribute="top" constant="15" id="WCz-Gq-SDa"/>
                             <constraint firstItem="D1E-Wq-0zF" firstAttribute="bottom" secondItem="L7T-mh-zOg" secondAttribute="bottom" constant="32" id="YiE-Mp-JTC"/>
+                            <constraint firstItem="D1E-Wq-0zF" firstAttribute="trailing" secondItem="NdV-rd-ajj" secondAttribute="trailing" constant="40" id="Z7g-6P-rMM"/>
                             <constraint firstItem="Qiv-a8-eWD" firstAttribute="top" secondItem="D1E-Wq-0zF" secondAttribute="top" constant="15" id="ZXm-Yd-hBJ"/>
                             <constraint firstItem="Qiv-a8-eWD" firstAttribute="leading" secondItem="D1E-Wq-0zF" secondAttribute="leading" constant="40" id="q47-n8-aBW"/>
                             <constraint firstItem="Qiv-a8-eWD" firstAttribute="top" secondItem="D1E-Wq-0zF" secondAttribute="top" constant="15" id="ql0-Zn-2pf"/>
