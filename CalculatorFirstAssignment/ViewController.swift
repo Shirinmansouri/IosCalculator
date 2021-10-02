@@ -13,6 +13,7 @@
   */
 
 import UIKit
+// functions type enumeration
 enum OperationTypes: String
 {
     case NoOperation = ""
@@ -41,6 +42,7 @@ class ViewController: UIViewController {
         ResultLable.text="0"
     }
 
+    // function for all numbers buttons
     @IBAction func PressNumberButton(_ sender: RoundButton) {
   
         if (pressedNumbers.count<11)
@@ -75,21 +77,24 @@ class ViewController: UIViewController {
         ResultLable.text =  pressedNumbers
         }
     }
-    
+    // divid function
     @IBAction func DivideButtonPressed(_ sender: RoundButton) {
         Calculation(operationType: OperationTypes.divide)
     }
+    //summation function
     @IBAction func SummationButtonPressed(_ sender: RoundButton) {
         Calculation(operationType: OperationTypes.sum)
     }
-    
+    //substarct function
     @IBAction func SubtractButtonPressed(_ sender: RoundButton) {
         Calculation(operationType: OperationTypes.minus)
     }
+    // multiple function handler
     @IBAction func MultiplButtonPressed(_ sender: RoundButton) {
         Calculation(operationType: OperationTypes.multiply)
     }
     
+    // function for dot button
     @IBAction func DotButtonPressed(_ sender: RoundButton) {
         if (pressedNumbers.count<10)
         {
@@ -112,7 +117,7 @@ class ViewController: UIViewController {
         }
     }
     
-    
+    // function for clear operation
     @IBAction func ClearButtonPressed(_ sender: RoundButton) {
         ResultLable.text="0"
         pressedNumbers=""
@@ -121,7 +126,7 @@ class ViewController: UIViewController {
         seconde = ""
         CurrentOperation = .NoOperation
     }
-
+// function for percentage operation
     @IBAction func BackSpaceButtonPressed(_ sender: RoundButton) {
         if(!pressedNumbers.isEmpty)
         {
@@ -135,7 +140,7 @@ class ViewController: UIViewController {
         ResultLable.text = pressedNumbers
     }
         
-        
+      // function for percentage operation
     @IBAction func PercentageButtonPressed(_ sender: RoundButton) {
         var temp = ResultLable.text?.trimmingCharacters(in: .whitespaces)
         if ((temp?.count)!<=11)
@@ -147,10 +152,12 @@ class ViewController: UIViewController {
         }
     }
      
-   
+   // function for equal operation
     @IBAction func EqualButtonPressed(_ sender: RoundButton) {
         Calculation(operationType: CurrentOperation)
     }
+    
+    // function for pluse/minus button operation
     @IBAction func PlusMinusButtonPressed(_ sender: RoundButton) {
         
         var temp : String = (ResultLable.text?.trimmingCharacters(in: .whitespaces))!
@@ -163,6 +170,7 @@ class ViewController: UIViewController {
        
     }
     
+    // function for formatting the result of perentage function
     func FormatingDouble(temp: Double) -> String {
         var formattedValue = String(format: "%.10f", temp)
         while formattedValue.last == "0" {
@@ -171,13 +179,11 @@ class ViewController: UIViewController {
         if formattedValue.last == "." {
                     formattedValue.removeLast()
                 }
-   
-     /*   while formattedValue.count > 10 {
-                        formattedValue.removeLast()
-                    }*/
+
         
         return formattedValue
     }
+    // the core function of calculator
     func Calculation(operationType: OperationTypes) {
        
         if (CurrentOperation != .NoOperation)
@@ -219,6 +225,7 @@ class ViewController: UIViewController {
             
     }
     
+    // function for formatting the final result of calculation
     func FormatFinalResult(result : String) -> String
     {
         if (Double(result)!.truncatingRemainder(dividingBy: 1)==0)
@@ -228,7 +235,8 @@ class ViewController: UIViewController {
         }
         else
         {
-            let formattedValue = String(format: "%.2f", Double(result)!)
+            // floating number accurate to 8 decimal number
+            let formattedValue = String(format: "%.8f", Double(result)!)
             return formattedValue
         }
            
