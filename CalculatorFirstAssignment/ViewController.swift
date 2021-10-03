@@ -35,8 +35,6 @@ class ViewController: UIViewController {
     var second = ""
     var finalResult = ""
     var CurrentOperation : OperationTypes = .NoOperation
-    //var IsNegetiveFirst = 1
-    //var IsNegetiveSecond = 1
     
     override func viewDidLoad() {
         ResultLable.text="0"
