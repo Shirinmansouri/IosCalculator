@@ -35,8 +35,8 @@ class ViewController: UIViewController {
     var second = ""
     var finalResult = ""
     var CurrentOperation : OperationTypes = .NoOperation
-    var IsNegetiveFirst = 1
-    var IsNegetiveSecond = 1
+    //var IsNegetiveFirst = 1
+    //var IsNegetiveSecond = 1
     
     override func viewDidLoad() {
         ResultLable.text="0"
@@ -141,7 +141,8 @@ class ViewController: UIViewController {
    // function for equal operation
     @IBAction func EqualButtonPressed(_ sender: RoundButton) {
         if(CurrentOperation != .NoOperation){
-        Calculation(operationType: CurrentOperation)
+            let newVar : OperationTypes = .Equal
+        Calculation(operationType: newVar)
         }
     }
     
@@ -205,8 +206,13 @@ class ViewController: UIViewController {
                 finalResult = "\( Double(first)!  + Double(second)! )"
             }
                 first = finalResult
-                CurrentOperation = .NoOperation
                 ResultLable.text = FormatFinalResult(result: finalResult)
+                if(operationType != .Equal){
+                    CurrentOperation = operationType
+                }
+                else{
+                    CurrentOperation = .NoOperation
+                }
                 
             }
             else{
