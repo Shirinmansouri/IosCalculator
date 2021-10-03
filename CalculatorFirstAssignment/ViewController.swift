@@ -140,7 +140,9 @@ class ViewController: UIViewController {
      
    // function for equal operation
     @IBAction func EqualButtonPressed(_ sender: RoundButton) {
+        if(CurrentOperation != .NoOperation){
         Calculation(operationType: CurrentOperation)
+        }
     }
     
     // function for pluse/minus button operation
@@ -155,7 +157,7 @@ class ViewController: UIViewController {
         else{
             let funny = (Double(temp)! * (-1))
             ResultLable.text = FormatingDouble(temp: funny)
-            first = FormatingDouble(temp: funny)
+            pressedNumbers = FormatingDouble(temp: funny)
             
         }
          
