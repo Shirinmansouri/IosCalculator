@@ -111,7 +111,7 @@ class ViewController: UIViewController {
         second = ""
         CurrentOperation = .NoOperation
     }
-// function for percentage operation
+// function for Backspace
     @IBAction func BackSpaceButtonPressed(_ sender: RoundButton) {
         if(!pressedNumbers.isEmpty)
         {
