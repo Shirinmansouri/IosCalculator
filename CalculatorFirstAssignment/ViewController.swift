@@ -152,6 +152,12 @@ class ViewController: UIViewController {
             ResultLable.text = "\("-")\(temp)"
             pressedNumbers = "\("-")\(temp)"
         }
+        else{
+            let funny = (Double(temp)! * (-1))
+            ResultLable.text = FormatingDouble(temp: funny)
+            first = FormatingDouble(temp: funny)
+            
+        }
          
        
     }
@@ -197,6 +203,7 @@ class ViewController: UIViewController {
                 finalResult = "\( Double(first)!  + Double(second)! )"
             }
                 first = finalResult
+                CurrentOperation = .NoOperation
                 ResultLable.text = FormatFinalResult(result: finalResult)
                 
             }
