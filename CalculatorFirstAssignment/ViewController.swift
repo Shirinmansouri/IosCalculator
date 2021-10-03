@@ -121,6 +121,7 @@ class ViewController: UIViewController {
         if (pressedNumbers.count == 0)
         {
             pressedNumbers = "0"
+            first = "0"
         }
         ResultLable.text = pressedNumbers
     }
