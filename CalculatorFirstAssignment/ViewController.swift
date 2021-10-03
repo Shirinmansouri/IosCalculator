@@ -4,7 +4,7 @@
   StudentId: 301131068
   
   Author: Ali Roudak
-  StudentId: 301131068
+  StudentId: 301216533
   
   ModifiedDate: 25/September/2021
   Description: Calculator
@@ -32,7 +32,7 @@ class ViewController: UIViewController {
     
     var pressedNumbers=""
     var first = ""
-    var seconde = ""
+    var second = ""
     var finalResult = ""
     var CurrentOperation : OperationTypes = .NoOperation
     var IsNegetiveFirst = 1
@@ -123,7 +123,7 @@ class ViewController: UIViewController {
         pressedNumbers=""
         finalResult = ""
         first = ""
-        seconde = ""
+        second = ""
         CurrentOperation = .NoOperation
     }
 // function for percentage operation
@@ -170,7 +170,7 @@ class ViewController: UIViewController {
        
     }
     
-    // function for formatting the result of perentage function
+    // function for formatting the result of percentage function
     func FormatingDouble(temp: Double) -> String {
         var formattedValue = String(format: "%.10f", temp)
         while formattedValue.last == "0" {
@@ -190,25 +190,25 @@ class ViewController: UIViewController {
         {
             if (pressedNumbers != "")
             {
-            seconde = pressedNumbers
+            second = pressedNumbers
             pressedNumbers=""
                
             if (CurrentOperation == .divide)
             {
-                finalResult = "\( Double(first)! / Double(seconde)!)"
+                finalResult = "\( Double(first)! / Double(second)!)"
 
             }
             else if (CurrentOperation == .minus)
             {
-                finalResult = "\( Double(first)! - Double(seconde)!  )"
+                finalResult = "\( Double(first)! - Double(second)!  )"
             }
             else if (CurrentOperation == .multiply)
             {
-                finalResult = "\( Double(first)!  * Double(seconde)!  )"
+                finalResult = "\( Double(first)!  * Double(second)!  )"
             }
             else if (CurrentOperation == .sum)
             {
-                finalResult = "\( Double(first)!  + Double(seconde)! )"
+                finalResult = "\( Double(first)!  + Double(second)! )"
             }
                 first = finalResult
                 ResultLable.text = FormatFinalResult(result: finalResult)
