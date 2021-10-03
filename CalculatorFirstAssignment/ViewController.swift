@@ -147,6 +147,7 @@ class ViewController: UIViewController {
     // function for pluse/minus button operation
     @IBAction func PlusMinusButtonPressed(_ sender: RoundButton) {
         
+        if(CurrentOperation == .NoOperation){
         let temp : String = (ResultLable.text?.trimmingCharacters(in: .whitespaces))!
         if(temp.first != "-" )
         {
@@ -158,6 +159,27 @@ class ViewController: UIViewController {
             ResultLable.text = FormatingDouble(temp: funny)
             pressedNumbers = FormatingDouble(temp: funny)
             
+        }
+        }
+        else{
+            if(pressedNumbers == ""){
+                ResultLable.text = "-0"
+                pressedNumbers = "-0"
+            }
+            else{
+                let temp : String = (ResultLable.text?.trimmingCharacters(in: .whitespaces))!
+                if(temp.first != "-" )
+                {
+                    ResultLable.text = "\("-")\(temp)"
+                    pressedNumbers = "\("-")\(temp)"
+                }
+                else{
+                    let funny = (Double(temp)! * (-1))
+                    ResultLable.text = FormatingDouble(temp: funny)
+                    pressedNumbers = FormatingDouble(temp: funny)
+                    
+                }
+            }
         }
          
        
