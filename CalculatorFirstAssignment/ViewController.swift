@@ -126,13 +126,31 @@ class ViewController: UIViewController {
         
       // function for percentage operation
     @IBAction func PercentageButtonPressed(_ sender: RoundButton) {
-        let temp = ResultLable.text?.trimmingCharacters(in: .whitespaces)
-        if((temp?.count)!<=11)
+        var temp = ResultLable.text?.trimmingCharacters(in: .whitespaces)
+        
+        if(((temp?.count)!<11) && ((temp?.count)! + 2)<11)
         {
             let result: Double = Double(temp!)! / (100)
             pressedNumbers = FormatingDouble(temp: result)
             ResultLable.text = FormatingDouble(temp: result)
             
+        }
+        else{
+            var counter = 0
+            while((temp?.first == "0") || (temp?.first == ".")){
+                temp?.removeFirst()
+                counter += 1
+            }
+            counter -= 1
+            var residual = Double(temp!)!
+            while(residual >= 10.0){
+                residual /= 10.0
+            }
+            var toShow = FormatingDouble(temp: residual)
+            counter += 2
+            toShow += "e-" + String(counter)
+            pressedNumbers = toShow
+            ResultLable.text = toShow
         }
     }
      
@@ -261,7 +279,10 @@ class ViewController: UIViewController {
         else
         {
             // floating number accurate to 8 decimal number
-            let formattedValue = String(format: "%.8f", Double(result)!)
+            var formattedValue = String(format: "%.8f", Double(result)!)
+            while(formattedValue.last == "0"){
+                formattedValue.removeLast()
+            }
             return formattedValue
         }
            
