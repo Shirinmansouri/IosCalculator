@@ -77,22 +77,7 @@ class ViewController: UIViewController {
         ResultLable.text =  pressedNumbers
         }
     }
-    // divid function
-    @IBAction func DivideButtonPressed(_ sender: RoundButton) {
-        Calculation(operationType: OperationTypes.divide)
-    }
-    //summation function
-    @IBAction func SummationButtonPressed(_ sender: RoundButton) {
-        Calculation(operationType: OperationTypes.sum)
-    }
-    //substarct function
-    @IBAction func SubtractButtonPressed(_ sender: RoundButton) {
-        Calculation(operationType: OperationTypes.minus)
-    }
-    // multiple function handler
-    @IBAction func MultiplButtonPressed(_ sender: RoundButton) {
-        Calculation(operationType: OperationTypes.multiply)
-    }
+    
     
     // function for dot button
     @IBAction func DotButtonPressed(_ sender: RoundButton) {
@@ -241,5 +226,23 @@ class ViewController: UIViewController {
         }
            
     }
+    
+    // divid function
+    @IBAction func DivideButtonPressed(_ sender: RoundButton) {
+        Calculation(operationType: OperationTypes.divide)
+    }
+    //summation function
+    @IBAction func SummationButtonPressed(_ sender: RoundButton) {
+        Calculation(operationType: OperationTypes.sum)
+    }
+    //substarct function
+    @IBAction func SubtractButtonPressed(_ sender: RoundButton) {
+        Calculation(operationType: OperationTypes.minus)
+    }
+    // multiple function handler
+    @IBAction func MultiplButtonPressed(_ sender: RoundButton) {
+        Calculation(operationType: OperationTypes.multiply)
+    }
+    
 }
 
