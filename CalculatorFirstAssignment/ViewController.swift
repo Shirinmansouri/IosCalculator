@@ -105,7 +105,7 @@ class ViewController: UIViewController {
         ResultLable.text="0"
         pressedNumbers=""
         finalResult = ""
-        first = ""
+        first = "0"
         second = ""
         CurrentOperation = .NoOperation
     }
