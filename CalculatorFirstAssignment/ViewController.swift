@@ -207,7 +207,9 @@ class ViewController: UIViewController {
                 ResultLable.text = FormatFinalResult(result: finalResult)
                 
             }
+            else{
             CurrentOperation = operationType
+            }
         }
         else
         {
