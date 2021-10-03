@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     @IBOutlet var vwCalc: UIView!
     
     var pressedNumbers=""
-    var first = ""
+    var first = "0"
     var second = ""
     var finalResult = ""
     var CurrentOperation : OperationTypes = .NoOperation
@@ -221,8 +221,10 @@ class ViewController: UIViewController {
         }
         else
         {
+            if(pressedNumbers != ""){
             first = pressedNumbers
             pressedNumbers = ""
+            }
             CurrentOperation = operationType
         }
             
