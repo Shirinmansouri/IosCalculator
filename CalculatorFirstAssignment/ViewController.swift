@@ -128,8 +128,8 @@ class ViewController: UIViewController {
         
       // function for percentage operation
     @IBAction func PercentageButtonPressed(_ sender: RoundButton) {
-        var temp = ResultLable.text?.trimmingCharacters(in: .whitespaces)
-        if ((temp?.count)!<=11)
+        let temp = ResultLable.text?.trimmingCharacters(in: .whitespaces)
+        if((temp?.count)!<=11)
         {
             let result: Double = Double(temp!)! / (100)
             pressedNumbers = FormatingDouble(temp: result)
@@ -146,8 +146,8 @@ class ViewController: UIViewController {
     // function for pluse/minus button operation
     @IBAction func PlusMinusButtonPressed(_ sender: RoundButton) {
         
-        var temp : String = (ResultLable.text?.trimmingCharacters(in: .whitespaces))!
-        if (temp.first != "-" )
+        let temp : String = (ResultLable.text?.trimmingCharacters(in: .whitespaces))!
+        if(temp.first != "-" )
         {
             ResultLable.text = "\("-")\(temp)"
             pressedNumbers = "\("-")\(temp)"
@@ -199,7 +199,7 @@ class ViewController: UIViewController {
                 first = finalResult
                 ResultLable.text = FormatFinalResult(result: finalResult)
                 
-        }
+            }
             CurrentOperation = operationType
         }
         else
