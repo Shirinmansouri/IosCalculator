@@ -6,8 +6,12 @@
   Author: Ali Roudak
   StudentId: 301216533
   
-  ModifiedDate: 25/September/2021
-  Description: Calculator
+  Last Modification Date: 03/October/2021
+  
+  Description: iOS Calculator
+               This code is to realize a calculator with a regular range of operations, including summation, subtraction, multiplication, and division. It also is capable of calculating percentage of a number, changing a number's sign, making float numbers. This calculator could erase inputs when they are mistaken, and could clear off the whole display if necessary.
+               To reach these goals, there are many functions defined. The core function in this code is named Calculation, which is responsible for execution of mathematical operations. This function (Calculation) is called by all four operators (+, -, /, *), and by (=) as well. To have calculations done, there are left-side value operand (named as "first"), right-side value operand (named "second") and an operator. The time all of these three elements are filled by the user, the arithmatic operation is accomplished and the result pops up on the screen. The result is also stored in variable first (left-side value operand), in case further operations are to be done on that.
+               Full description of this code is already provided in a video which gives viewers a visual understanding of different sections within the code.
   
   
   */
