@@ -278,12 +278,19 @@ class ViewController: UIViewController {
         if (Double(result)!.truncatingRemainder(dividingBy: 1)==0)
         {
             let temp = Int(Double(result)!)
-            return "\(temp) "
+            return "\(temp)"
         }
         else
         {
             // floating number accurate to 8 decimal number
-            var formattedValue = String(format: "%.8f", Double(result)!)
+                var formattedValue = String(format: "%.8f", Double(result)!)
+            if(formattedValue.count>11)
+            {
+                while (formattedValue.count<=11)
+                {
+                    formattedValue.removeLast()
+                }
+            }
             while(formattedValue.last == "0"){
                 formattedValue.removeLast()
             }
