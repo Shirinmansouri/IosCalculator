@@ -6,12 +6,13 @@
   Author: Ali Roudak
   StudentId: 301216533
   
-  Last Modification Date: 03/October/2021
+  Last Modification Date: 17/October/2021
   
   Description: iOS Calculator
                This code is to realize a calculator with a regular range of operations, including summation, subtraction, multiplication, and division. It also is capable of calculating percentage of a number, changing a number's sign, making float numbers. This calculator could erase inputs when they are mistaken, and could clear off the whole display if necessary.
                To reach these goals, there are many functions defined. The core function in this code is named Calculation, which is responsible for execution of mathematical operations. This function (Calculation) is called by all four operators (+, -, /, *), and by (=) as well. To have calculations done, there are left-side value operand (named as "first"), right-side value operand (named "second") and an operator. The time all of these three elements are filled by the user, the arithmatic operation is accomplished and the result pops up on the screen. The result is also stored in variable first (left-side value operand), in case further operations are to be done on that.
                Full description of this code is already provided in a video which gives viewers a visual understanding of different sections within the code.
+  
   
   
   */
@@ -317,48 +318,48 @@ class ViewController: UIViewController {
         Calculation(operationType: OperationTypes.multiply)
     }
     
-    
+    // to Calculate Cosinus value of anything on the screen
     @IBAction func CosPressed(_ sender: RoundButton) {
         pressedNumbers = ResultLable.text!
         let cosinus = cos(Double(pressedNumbers)! * Double.pi / 180)
         ResultLable.text = FormatingDouble(temp: cosinus)
         pressedNumbers =  ResultLable.text!
     }
-    
+    //to Calculate Tan value of anything on the screen
     @IBAction func TanPressed(_ sender: RoundButton) {
         pressedNumbers = ResultLable.text!
         let cosinus = tan(Double(pressedNumbers)! * Double.pi / 180)
         ResultLable.text = FormatingDouble(temp: cosinus)
         pressedNumbers =  ResultLable.text!
     }
-    
+    //to Calculate Sinus value of anything on the screen
     @IBAction func SinPressed(_ sender: RoundButton) {
         pressedNumbers = ResultLable.text!
-        let cosinus = sin(Double(pressedNumbers)! * Double.pi / 180)
-        ResultLable.text = FormatingDouble(temp: cosinus)
+        let sinus = sin(Double(pressedNumbers)! * Double.pi / 180)
+        ResultLable.text = FormatingDouble(temp: sinus)
         pressedNumbers =  ResultLable.text!
     }
-    
+    //to return Pi number
     @IBAction func PiPressed(_ sender: RoundButton) {
         ResultLable.text = FormatingDouble(temp: M_PI)
         pressedNumbers =  ResultLable.text!
         
     }
-    
+    //to Calculate Square root of anything on the screen
     @IBAction func RadicalPressed(_ sender: RoundButton) {
         pressedNumbers = ResultLable.text!
         let radical = Double(pressedNumbers)!.squareRoot()
         ResultLable.text = FormatingDouble(temp: radical)
         pressedNumbers =  ResultLable.text!
     }
-    
+    //to Calculate Square of anything on the screen
     @IBAction func SquarePressed(_ sender: RoundButton) {
         pressedNumbers = ResultLable.text!
         let square = Double(pressedNumbers)! * Double(pressedNumbers)!
         ResultLable.text = FormatingDouble(temp: square)
         pressedNumbers =  ResultLable.text!
     }
-    
+    //to generate a Random number between 0 and 1
     @IBAction func RandPressed(_ sender: RoundButton) {
         pressedNumbers = ResultLable.text!
         let randomDouble = Double.random(in: 0...1)
