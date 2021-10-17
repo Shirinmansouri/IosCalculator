@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4U2-E1-n8g">
-    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_7" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -14,17 +14,17 @@
             <objects>
                 <viewController id="4U2-E1-n8g" customClass="ViewController" customModule="CalculatorFirstAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eWl-dZ-kys">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="926" height="428"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="evc-QV-vk0">
-                                <rect key="frame" x="39" y="400" width="350" height="432"/>
+                                <rect key="frame" x="516" y="70" width="350" height="332"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZdI-ia-WMW">
-                                        <rect key="frame" x="0.0" y="0.0" width="350" height="80"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CGa-Su-M52" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.94167947770000004" green="0.5979203582" blue="0.2194646895" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="FKI-E6-UqR"/>
@@ -65,7 +65,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GKX-KV-6XB" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="90" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="gbD-il-7re"/>
@@ -105,7 +105,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Du0-ub-xj1" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="180" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="3T8-mi-7gi"/>
@@ -145,7 +145,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YMf-AU-Ah4" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="270" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.37885780738160829" green="0.57045216145856481" blue="0.68166388586314031" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="ccy-il-yoz"/>
@@ -188,10 +188,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nB4-X3-b17">
-                                        <rect key="frame" x="0.0" y="88" width="350" height="80"/>
+                                        <rect key="frame" x="0.0" y="68" width="350" height="60"/>
                                         <subviews>
                                             <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XyN-kv-Vb7" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="2TA-tk-GSN"/>
@@ -231,7 +231,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Zx-C2-f0K" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="90" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="F3Z-8N-p9Y"/>
@@ -271,7 +271,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JzW-a7-KsP" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="180" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="1OZ-1a-3w8"/>
@@ -311,7 +311,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OKd-9g-NyW" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="270" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="0Pf-cS-lAX"/>
@@ -369,10 +369,10 @@
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iQQ-hO-rwd">
-                                        <rect key="frame" x="0.0" y="176" width="350" height="80"/>
+                                        <rect key="frame" x="0.0" y="136" width="350" height="60"/>
                                         <subviews>
                                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nSE-0r-XK0" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="1Xl-TQ-SJg"/>
@@ -412,7 +412,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="21b-C3-AuF" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="90" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="37L-gK-jdN"/>
@@ -452,7 +452,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="P7k-kM-aZv" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="180" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="CEv-fQ-yMe"/>
@@ -492,7 +492,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6cb-l6-1ul" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="270" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="7m8-gc-hfJ"/>
@@ -534,10 +534,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="49Y-1a-42z">
-                                        <rect key="frame" x="0.0" y="264" width="350" height="80"/>
+                                        <rect key="frame" x="0.0" y="204" width="350" height="60"/>
                                         <subviews>
                                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DvA-aa-FjP" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="Jek-aw-WOQ"/>
@@ -577,7 +577,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h7W-vu-DGo" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="90" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="80" id="5rG-vp-Rwl"/>
@@ -617,7 +617,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nsu-RH-skj" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="180" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="5BF-Qz-SUz"/>
@@ -657,7 +657,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F4X-Sb-Pbi" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="270" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="5iH-h5-jak"/>
@@ -700,10 +700,10 @@
                                         <variation key="heightClass=regular-widthClass=regular" hidden="NO"/>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JTU-dw-8Rs">
-                                        <rect key="frame" x="0.0" y="352" width="350" height="80"/>
+                                        <rect key="frame" x="0.0" y="272" width="350" height="60"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hKC-Ce-8Og" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="7d7-Ve-DDF"/>
@@ -737,7 +737,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Qvt-6F-SS9" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="90" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="90" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="60" id="6If-kU-Pp6"/>
@@ -777,7 +777,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iDv-Y8-7ff" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="180" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="180" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.35513684820000002" green="0.35677631469999999" blue="0.36169471450000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="BTS-uM-ANF"/>
@@ -817,7 +817,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sYh-aW-kpo" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
-                                                <rect key="frame" x="270" y="0.0" width="80" height="80"/>
+                                                <rect key="frame" x="270" y="0.0" width="80" height="60"/>
                                                 <color key="backgroundColor" red="0.37885780740000002" green="0.5704521615" blue="0.68166388590000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="80" id="5Hf-Ie-4Yg"/>
@@ -879,7 +879,7 @@
                                 </variation>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mOe-jG-Hw1">
-                                <rect key="frame" x="39" y="312" width="350" height="80"/>
+                                <rect key="frame" x="335" y="0.0" width="531" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="9SA-vx-dFQ"/>
                                     <constraint firstAttribute="height" constant="80" id="Jke-hs-DIi"/>
@@ -945,7 +945,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="EqualButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="egj-7y-1NP"/>
+                                    <action selector="CosPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="yGa-Qf-ER3"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IRo-M7-75c" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
@@ -982,7 +982,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="EqualButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="7XQ-Vh-Uwg"/>
+                                    <action selector="TanPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="Rx3-eY-Fzk"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ADx-Lf-AeR" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
@@ -1019,7 +1019,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="EqualButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="xq5-m2-cPb"/>
+                                    <action selector="SinPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="tIG-v8-dVh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fvy-Ht-wsr" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
@@ -1057,7 +1057,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="EqualButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="YYv-K5-DMJ"/>
+                                    <action selector="PiPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="CVn-zS-SFb"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pFy-XE-wSh" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
@@ -1094,7 +1094,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="EqualButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="bcV-JK-TmM"/>
+                                    <action selector="RadicalPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="Mpk-1o-Vcd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFm-ew-Sit" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
@@ -1131,7 +1131,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="EqualButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="LqT-ST-uzW"/>
+                                    <action selector="SquarePressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="amn-WD-gm5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="at1-RV-4ee" customClass="RoundButton" customModule="CalculatorFirstAssignment" customModuleProvider="target">
@@ -1168,7 +1168,7 @@
                                     </mask>
                                 </variation>
                                 <connections>
-                                    <action selector="EqualButtonPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="OBn-Ot-DjF"/>
+                                    <action selector="RandPressed:" destination="4U2-E1-n8g" eventType="touchUpInside" id="bOL-ha-gHg"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1227,6 +1227,11 @@
                                 <exclude reference="JUb-XL-gNH"/>
                                 <exclude reference="4gG-DG-6hd"/>
                                 <exclude reference="Ubj-yq-lFz"/>
+                                <exclude reference="Dmm-rL-6an"/>
+                                <exclude reference="PdD-e5-O4g"/>
+                                <exclude reference="bOr-YN-ucc"/>
+                                <exclude reference="bSn-dj-hVx"/>
+                                <exclude reference="we3-Jx-Vh8"/>
                                 <exclude reference="oag-ey-XUb"/>
                                 <exclude reference="zq6-Kc-DWc"/>
                                 <exclude reference="Q66-Lp-5If"/>
@@ -1235,19 +1240,14 @@
                                 <exclude reference="iqI-wx-fx2"/>
                                 <exclude reference="Vx1-hH-od1"/>
                                 <exclude reference="cM6-AZ-5fD"/>
-                                <exclude reference="Dmm-rL-6an"/>
-                                <exclude reference="PdD-e5-O4g"/>
-                                <exclude reference="bOr-YN-ucc"/>
-                                <exclude reference="bSn-dj-hVx"/>
-                                <exclude reference="we3-Jx-Vh8"/>
                                 <exclude reference="MtD-wa-W6o"/>
                                 <exclude reference="wPL-WD-XFu"/>
+                                <exclude reference="31v-64-V6P"/>
+                                <exclude reference="WQQ-mx-TFo"/>
                                 <exclude reference="1KC-4H-A3D"/>
                                 <exclude reference="OKC-re-ZIP"/>
                                 <exclude reference="RFf-Fp-lcm"/>
                                 <exclude reference="fhs-wB-Dzz"/>
-                                <exclude reference="31v-64-V6P"/>
-                                <exclude reference="WQQ-mx-TFo"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=regular">
@@ -1269,14 +1269,6 @@
                                 <include reference="JUb-XL-gNH"/>
                                 <include reference="4gG-DG-6hd"/>
                                 <include reference="Ubj-yq-lFz"/>
-                                <include reference="oag-ey-XUb"/>
-                                <include reference="zq6-Kc-DWc"/>
-                                <include reference="Q66-Lp-5If"/>
-                                <include reference="dd8-HO-4Eh"/>
-                                <include reference="KsG-jT-88b"/>
-                                <include reference="iqI-wx-fx2"/>
-                                <include reference="Vx1-hH-od1"/>
-                                <include reference="cM6-AZ-5fD"/>
                                 <include reference="Dmm-rL-6an"/>
                                 <include reference="PdD-e5-O4g"/>
                                 <exclude reference="VrI-mR-ssV"/>
@@ -1285,18 +1277,26 @@
                                 <exclude reference="dvz-8y-eaK"/>
                                 <exclude reference="rqF-xn-2f6"/>
                                 <include reference="we3-Jx-Vh8"/>
+                                <include reference="oag-ey-XUb"/>
+                                <include reference="zq6-Kc-DWc"/>
+                                <include reference="Q66-Lp-5If"/>
+                                <include reference="dd8-HO-4Eh"/>
+                                <include reference="KsG-jT-88b"/>
+                                <include reference="iqI-wx-fx2"/>
+                                <include reference="Vx1-hH-od1"/>
+                                <include reference="cM6-AZ-5fD"/>
                                 <exclude reference="Jug-yE-rcV"/>
                                 <include reference="MtD-wa-W6o"/>
                                 <exclude reference="NnJ-UC-tO1"/>
                                 <include reference="wPL-WD-XFu"/>
+                                <include reference="31v-64-V6P"/>
+                                <include reference="WQQ-mx-TFo"/>
                                 <include reference="1KC-4H-A3D"/>
                                 <exclude reference="1jl-JG-Kf9"/>
                                 <include reference="OKC-re-ZIP"/>
                                 <include reference="RFf-Fp-lcm"/>
                                 <exclude reference="aF3-Mk-Nv8"/>
                                 <include reference="fhs-wB-Dzz"/>
-                                <include reference="31v-64-V6P"/>
-                                <include reference="WQQ-mx-TFo"/>
                             </mask>
                         </variation>
                     </view>
@@ -1307,7 +1307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lk8-45-wZ2" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3631.1015118790501" y="-869.15887850467288"/>
+            <point key="canvasLocation" x="-4019" y="-721"/>
         </scene>
     </scenes>
     <designables>

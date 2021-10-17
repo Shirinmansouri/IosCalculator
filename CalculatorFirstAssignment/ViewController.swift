@@ -17,6 +17,7 @@
   */
 
 import UIKit
+import Darwin
 // functions type enumeration
 enum OperationTypes: String
 {
@@ -316,5 +317,53 @@ class ViewController: UIViewController {
         Calculation(operationType: OperationTypes.multiply)
     }
     
+    
+    @IBAction func CosPressed(_ sender: RoundButton) {
+        pressedNumbers = ResultLable.text!
+        let cosinus = cos(Double(pressedNumbers)! * Double.pi / 180)
+        ResultLable.text = FormatingDouble(temp: cosinus)
+        pressedNumbers =  ResultLable.text!
+    }
+    
+    @IBAction func TanPressed(_ sender: RoundButton) {
+        pressedNumbers = ResultLable.text!
+        let cosinus = tan(Double(pressedNumbers)! * Double.pi / 180)
+        ResultLable.text = FormatingDouble(temp: cosinus)
+        pressedNumbers =  ResultLable.text!
+    }
+    
+    @IBAction func SinPressed(_ sender: RoundButton) {
+        pressedNumbers = ResultLable.text!
+        let cosinus = sin(Double(pressedNumbers)! * Double.pi / 180)
+        ResultLable.text = FormatingDouble(temp: cosinus)
+        pressedNumbers =  ResultLable.text!
+    }
+    
+    @IBAction func PiPressed(_ sender: RoundButton) {
+        ResultLable.text = FormatingDouble(temp: M_PI)
+        pressedNumbers =  ResultLable.text!
+        
+    }
+    
+    @IBAction func RadicalPressed(_ sender: RoundButton) {
+        pressedNumbers = ResultLable.text!
+        let radical = Double(pressedNumbers)!.squareRoot()
+        ResultLable.text = FormatingDouble(temp: radical)
+        pressedNumbers =  ResultLable.text!
+    }
+    
+    @IBAction func SquarePressed(_ sender: RoundButton) {
+        pressedNumbers = ResultLable.text!
+        let square = Double(pressedNumbers)! * Double(pressedNumbers)!
+        ResultLable.text = FormatingDouble(temp: square)
+        pressedNumbers =  ResultLable.text!
+    }
+    
+    @IBAction func RandPressed(_ sender: RoundButton) {
+        pressedNumbers = ResultLable.text!
+        let randomDouble = Double.random(in: 0...1)
+        ResultLable.text = FormatingDouble(temp: randomDouble)
+        pressedNumbers =  ResultLable.text!
+    }
 }
 
