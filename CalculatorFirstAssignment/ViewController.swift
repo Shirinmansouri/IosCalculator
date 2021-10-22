@@ -13,6 +13,8 @@
                To reach these goals, there are many functions defined. The core function in this code is named Calculation, which is responsible for execution of mathematical operations. This function (Calculation) is called by all four operators (+, -, /, *), and by (=) as well. To have calculations done, there are left-side value operand (named as "first"), right-side value operand (named "second") and an operator. The time all of these three elements are filled by the user, the arithmatic operation is accomplished and the result pops up on the screen. The result is also stored in variable first (left-side value operand), in case further operations are to be done on that.
                Full description of this code is already provided in a video which gives viewers a visual understanding of different sections within the code.
   
+               In this new version of our application, seven new functionalities were added including Tan, Sin, Cos, Squareroot, Square, Rand, and Pi number. These new functionalities appear whenever the screen is rotated, so that it stays on horizontal orientation.
+  
   
   
   */
